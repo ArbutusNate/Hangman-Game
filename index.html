@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset=utf-8>
+    <meta name=description content="">
+    <meta name=viewport content="width=device-width, initial-scale=1">
 	<title>Hangman</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
       <h1>Hangman</h1>
+      <h2>Adventure!</h2>
+    </div>
+  </div>
+<!--   <div class="row">
+    <div class="col-md-12">
+      <h2>Adventure!</h2>
+    </div>
+  </div> -->
+  <div class="row">
+    <div class="col-md-12">
+      <p id="messages">Press any key to get started!</p>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12">
+      <p><span id="pwordblank">!!!</span></p>    
     </div>
-    <div class="col-md-6">
-      <p>Press any key to get started!</p>
+  </div>
+  <div class="row">
+    <div class="col-md-6 infoframe">
+      <p>Guesses Left:</p><br>
+      <p id="guessleft">10</p>
+    </div>
+    <div class="col-md-6 infoframe">
+      <p>Incorrect guesses:</p><br>
+      <p id="guesshistory">Nothing yet!</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
       <p>Wins: <span id="wins">#</span></p>
-      <p>Number of guesses remaining:<span id="guessleft">10</span></p>
-      <p>Letters already guessed:<span id="guesshistory">#</span></p>
-      <p>Word Blanks <span id="pwordblank"></span></p>
     </div>
+  </div>
 </div>
 
 <script src="./assets/javascript/game.js"></script>

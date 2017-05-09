@@ -1,0 +1,57 @@
+body{
+	background-image: url('../images/dark_wall.png')
+}
+
+h1{
+	text-align: center;
+	font-family: 'ruins', sans-serif;
+	font-size: 100px;
+	margin: 50px;
+	color: #9d9d9d;
+}
+h2 {
+	font-size: 45px;
+	text-align: center;
+	position: relative;
+	margin-left: 125px;
+	margin-top: -75px;
+	font-family: 'adventure', sans-serif;
+    -ms-transform: rotate(-15deg); /* IE 9 */
+    -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
+    transform: rotate(-15deg);
+	background: -webkit-linear-gradient(red, yellow, white);
+	background: -o-linear-gradient(red, yellow, white);
+	background: linear-gradient(red, yellow, white);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+p {
+	font-size: 25px;
+	color: #eee;
+	font-family: 'adventure';
+	text-align: center;
+}
+#messages{
+	margin-top: 45px;
+}
+#pwordblank {
+	font-size: 60px;
+	max-height: 45px;
+	background: -webkit-linear-gradient(red, yellow, white);
+	background: -o-linear-gradient(red, yellow, white);
+	background: linear-gradient(red, yellow, white);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-right: 10px;
+}
+.infoframe{
+	border: solid 2px #eee;
+}
+@font-face{
+	font-family: 'adventure';
+	src: url('../fonts/adventure.otf');
+}
+@font-face{
+	font-family: 'ruins';
+	src: url('../fonts/towerruins3d2.ttf');
+}
