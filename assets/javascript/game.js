@@ -8,6 +8,8 @@ var guessleft = 10;
 var guesshistory = [];
 var wordblank = [];
 var wincondition = true;
+var audio = document.createElement('audio');
+audio.src = './assets/audio/Indiana_Jones_Theme.mp3';
 document.onkeyup = function(event){  //  --- On Keypress ---
 	playerChoice = event.key;
 	if(wincondition === true || guessleft === 0){ //Reset
@@ -26,6 +28,7 @@ document.onkeyup = function(event){  //  --- On Keypress ---
 		document.getElementById("pwordblank").innerHTML = wordblank.join(" ");
 		document.getElementById("messages").innerHTML = "Press a letter to guess!";
 		document.getElementById("guesshistory").innerHTML = "Nothing yet!";
+		audio.pause();
 	}
 	else {	// Play
 		if(word.indexOf(playerChoice) === -1 && guesshistory.indexOf(playerChoice) === -1){ //Wrong Guess. playerChoice doesn't exist in [word] or [guesshistory]
@@ -47,6 +50,7 @@ document.onkeyup = function(event){  //  --- On Keypress ---
 						document.getElementById("wins").innerHTML = wins; //Add HTML and update w/ "press any key to continue"
 						document.getElementById("messages").innerHTML = "You win! Press a letter to play again!";
 						console.log("You Win!");
+						audio.play();
 					}
 				}
 			}
