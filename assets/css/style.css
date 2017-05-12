@@ -15,7 +15,7 @@ h2 {
 	position: relative;
 	margin-left: 320px;
 	margin-top: -100px;
-	font-family: 'adventure', sans-serif;
+	font-family: 'adventure1', sans-serif;
     -ms-transform: rotate(-15deg); /* IE 9 */
     -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
     transform: rotate(-15deg);
@@ -28,7 +28,7 @@ h2 {
 p {
 	font-size: 23px;
 	color: #eee;
-	font-family: 'adventure';
+	font-family: 'adventure1';
 	text-align: center;
 }
 #messages{
@@ -48,8 +48,8 @@ p {
 	border: solid 2px #eee;
 }
 @font-face{
-	font-family: 'adventure';
-	src: url('../fonts/SF-fedora.ttf');
+	font-family: 'adventure1';
+	src: url('../fonts/SF-Fedora.ttf');
 }
 @font-face{
 	font-family: 'ruins';
