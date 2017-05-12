@@ -49,7 +49,7 @@ p {
 }
 @font-face{
 	font-family: 'adventure';
-	src: url('../fonts/adventure.otf');
+	src: url('../fonts/adventure.otf') format("opentype");
 }
 @font-face{
 	font-family: 'ruins';
