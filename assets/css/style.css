@@ -10,7 +10,7 @@ h1{
 	color: #9d9d9d;
 }
 h2 {
-	font-size: 45px;
+	font-size: 44px;
 	text-align: center;
 	position: relative;
 	margin-left: 320px;
@@ -26,7 +26,7 @@ h2 {
 	-webkit-text-fill-color: transparent;
 }
 p {
-	font-size: 25px;
+	font-size: 23px;
 	color: #eee;
 	font-family: 'adventure';
 	text-align: center;
@@ -42,14 +42,14 @@ p {
 	background: linear-gradient(red, yellow, white);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	padding-right: 10px;
+	padding-right: 20px;
 }
 .infoframe{
 	border: solid 2px #eee;
 }
 @font-face{
 	font-family: 'adventure';
-	src: url('../fonts/adventure.otf') format("opentype");
+	src: url('../fonts/SF-fedora.ttf');
 }
 @font-face{
 	font-family: 'ruins';
